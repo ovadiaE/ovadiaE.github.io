@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Mukta&family=Radio+Canada:wght@500&display=swap');
+
+body{
+    font-family: 'Radio Canada', sans-serif;
+    background-color: #E6E6E6;
+}
+.homepage-wrapper{
+    height:75vh;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-field{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%
+}
+
+.weather-display-wrapper{
+    border: 1px solid #ED764C;
+    background-color: #132040;
+    height: 80vh;
+    margin-top: 2%;
+    width: 80%;
+    border: 3px solid blue;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    color: black;
+}
+
+.header-left{
+    height: 100%;
+    width: 30%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 120%;
+    color: white
+}
+
+.header-right{
+    height: 100%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    color: white;
+}
+.text-display{
+    height: 20%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 170%;
+}
+
+.weather-display-grid{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+}
+.card{
+    height:60%;
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first{
+    color: white;
+    font-size: 200%
+}
+
+.second{
+    color: #ED764C;
+    font-size: 120%
+}
+
+/* Media Queries for adjusting the font size of todays forecast */
+@media screen and (max-width: 524px) {
+    .header-left{
+        font-size: 115;
+        width: 60%
+    }
+   }
+
+/* Media Queries for adjusting the font size of 5 day forecast */
+ @media screen and (max-width: 815px) {
+    .first{
+        color: white;
+        font-size: 170%
+    }
+    
+    .second{
+        color: #ED764C;
+        font-size: 90%
+    }
+   }
+
+   @media screen and (max-width: 600px) {
+    .first{
+        color: white;
+        font-size: 140%
+    }
+    
+    .second{
+        color: #ED764C;
+        font-size: 90%
+    }
+   }
+
+   @media screen and (max-width: 568px) {
+    .first{
+        color: white;
+        font-size: 120%
+    }
+    
+    .second{
+        color: #ED764C;
+        font-size: 60%
+    }
+    .weather-display-wrapper{
+        border: 1px solid #ED764C;
+        background-color: #132040;
+        height: 80vh;
+    }
+
+    .weather-display-grid{
+        height: 20%;
+    }
+}
+
+
+@media screen and (max-width: 427px) {
+    .first{
+        color: white;
+        font-size: 100%
+    }
+    
+    .second{
+        color: #ED764C;
+        font-size: 40%
+    }
+}
+
+@media screen and (max-width: 357px) {
+    .first{
+        color: white;
+        font-size: 90%
+    }
+    
+    .second{
+        color: #ED764C;
+        font-size: 20%
+    }
+}
+
+@media screen and (max-width: 328px) {
+    .first{
+        color: white;
+        font-size: 70%
+    }
+    
+    .second{
+        color: #ED764C;
+        font-size: 10%
+    }
+}
